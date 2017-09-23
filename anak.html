@@ -1,0 +1,16 @@
+anak html
+<html>
+<head>
+<script>
+function setinduk(){
+	window.opener.document.getElementById("isi").value = document.getElementById("input").value
+}
+</script>
+</head>
+<body>
+<form name = "form">
+	<input type = "text" name = "input" id = "input">
+	<input type = "button" name = "bt" value = "click" onClick = "setinduk()">
+</form>
+</body>
+</html>
