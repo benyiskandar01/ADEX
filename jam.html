@@ -1,0 +1,15 @@
+
+<form name="TP"> 
+<input type="text" size=12 name=jm> 
+</form> 
+<script> 
+function jam(){ 
+x=new Date() 
+jams=x.getHours() 
+minutes=x.getMinutes() 
+seconds=x.getSeconds() 
+document.TP.jm.value= jams+":"+minutes+":"+seconds
+setTimeout("jam()",1000) 
+} 
+jam() 
+</script>

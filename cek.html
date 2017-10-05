@@ -1,0 +1,24 @@
+<html> 
+<head> 
+<script> 
+function de(){
+x = document.forms[0].coba
+tt = ""
+for (i=0;i<x.length;i++){
+	if (x[i].checked){
+		tt = tt + x[i].value + " "
+		}	
+	}
+document.getElementById("tx").value = tt 
+}
+</script> 
+</head> 
+<body>
+<form id = "fm" name = "fms">
+<input type = "CHECKBOX"  name = "coba" value = "CEK 1" > cek 1
+<input type = "CHECKBOX"  name = "coba" value = "CEK 2" > cek 2
+<input type = "button" value = klik onclick = "de()" >
+<input type = "text" id = "tx" >
+</form>
+</body> 
+</html> 
